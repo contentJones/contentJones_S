@@ -8,7 +8,12 @@
  */
 ?>
 
-	</div><!-- #content -->
+	    </div><!-- #content -->
+	
+	<!--  Close Off Canvas Divs  -->
+	  </div>
+	</div>
+
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
@@ -16,6 +21,8 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+<!--  Google analytics before launch (or maybe a plugin such as All-in-one SEO)  -->
 
 <?php wp_footer(); ?>
 

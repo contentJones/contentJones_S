@@ -335,7 +335,11 @@ header {
     float: left;
     padding: .5em 0 .5em 4.16667%;
     font-size: 2em;
-    font-weight: 900; }
+    font-weight: 900;
+    margin: 0; }
+    /* line 142, styles/main.scss */
+    header .site-title a {
+      border-bottom: none; }
     @media screen and (max-width: 768px) {
       /* line 135, styles/main.scss */
       header .site-title {
@@ -348,17 +352,17 @@ header {
         /* line 89, styles/neat/grid/_span-columns.scss */
         header .site-title:last-child {
           margin-right: 0; } }
-  /* line 150, styles/main.scss */
+  /* line 153, styles/main.scss */
   header nav ul {
     padding: 0 2em 0 0;
     float: right;
     margin-bottom: -1px; }
     @media screen and (max-width: 768px) {
-      /* line 150, styles/main.scss */
+      /* line 153, styles/main.scss */
       header nav ul {
         padding-right: 0; } }
     @media screen and (max-width: 768px) {
-      /* line 150, styles/main.scss */
+      /* line 153, styles/main.scss */
       header nav ul {
         float: left;
         display: block;
@@ -375,33 +379,33 @@ header {
           clear: both;
           content: "";
           display: table; } }
-    /* line 167, styles/main.scss */
+    /* line 170, styles/main.scss */
     header nav ul li {
       float: left;
       display: inline-block;
       text-align: center; }
       @media screen and (max-width: 768px) {
-        /* line 167, styles/main.scss */
+        /* line 170, styles/main.scss */
         header nav ul li {
           float: none; } }
-      /* line 176, styles/main.scss */
+      /* line 179, styles/main.scss */
       header nav ul li a {
         font-size: 1.5em;
         padding: 1em .5em;
         display: inline-block;
         border-bottom-color: transparent; }
         @media screen and (max-width: 768px) {
-          /* line 176, styles/main.scss */
+          /* line 179, styles/main.scss */
           header nav ul li a {
             padding: 1em .5em;
             font-size: 1.2em; } }
-      /* line 188, styles/main.scss */
+      /* line 191, styles/main.scss */
       header nav ul li a:hover {
         color: #3a3a3a;
         border-bottom: 1px solid #3a3a3a; }
 
 /******** SUBHEADINGS ********/
-/* line 200, styles/main.scss */
+/* line 203, styles/main.scss */
 .subhead {
   float: left;
   display: block;
@@ -420,16 +424,16 @@ header {
   .subhead:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
-    /* line 200, styles/main.scss */
+    /* line 203, styles/main.scss */
     .subhead {
       margin-left: 0%; } }
   @media screen and (max-width: 600px) {
-    /* line 200, styles/main.scss */
+    /* line 203, styles/main.scss */
     .subhead {
       margin: 20px 0 25px; } }
 
 /******** PORTFOLIO ********/
-/* line 227, styles/main.scss */
+/* line 230, styles/main.scss */
 .portfolio .featured-item {
   margin-bottom: 40px; }
   /* line 20, styles/bourbon/addons/_clearfix.scss */
@@ -437,7 +441,7 @@ header {
     clear: both;
     content: "";
     display: table; }
-  /* line 231, styles/main.scss */
+  /* line 234, styles/main.scss */
   .portfolio .featured-item .featured-image {
     float: left;
     display: block;
@@ -448,7 +452,7 @@ header {
     .portfolio .featured-item .featured-image:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
-      /* line 231, styles/main.scss */
+      /* line 234, styles/main.scss */
       .portfolio .featured-item .featured-image {
         float: left;
         display: block;
@@ -458,11 +462,11 @@ header {
         /* line 89, styles/neat/grid/_span-columns.scss */
         .portfolio .featured-item .featured-image:last-child {
           margin-right: 0; } }
-    /* line 240, styles/main.scss */
+    /* line 243, styles/main.scss */
     .portfolio .featured-item .featured-image img {
       max-width: 100%;
       height: auto; }
-  /* line 246, styles/main.scss */
+  /* line 249, styles/main.scss */
   .portfolio .featured-item .featured-excerpt {
     float: left;
     display: block;
@@ -473,7 +477,7 @@ header {
     .portfolio .featured-item .featured-excerpt:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
-      /* line 246, styles/main.scss */
+      /* line 249, styles/main.scss */
       .portfolio .featured-item .featured-excerpt {
         float: left;
         display: block;
@@ -483,15 +487,15 @@ header {
         /* line 89, styles/neat/grid/_span-columns.scss */
         .portfolio .featured-item .featured-excerpt:last-child {
           margin-right: 0; } }
-    /* line 255, styles/main.scss */
+    /* line 258, styles/main.scss */
     .portfolio .featured-item .featured-excerpt h3 a {
       font-family: 'brandon-grotesque', sans-serif;
       font-size: 1.6em;
       line-height: 1.5em; }
-      /* line 260, styles/main.scss */
+      /* line 263, styles/main.scss */
       .portfolio .featured-item .featured-excerpt h3 a:hover {
         border-bottom: 1px solid #3a3a3a; }
-    /* line 263, styles/main.scss */
+    /* line 266, styles/main.scss */
     .portfolio .featured-item .featured-excerpt p {
       font-size: 1.2em;
       margin-bottom: 1.2em; }
@@ -502,7 +506,7 @@ header {
   clear: both;
   content: "";
   display: table; }
-/* line 279, styles/main.scss */
+/* line 282, styles/main.scss */
 .blog article {
   float: left;
   display: block;
@@ -514,7 +518,7 @@ header {
   .blog article:last-child {
     margin-right: 0; }
   @media screen and (max-width: 600px) {
-    /* line 279, styles/main.scss */
+    /* line 282, styles/main.scss */
     .blog article {
       float: left;
       display: block;
@@ -524,21 +528,21 @@ header {
       /* line 89, styles/neat/grid/_span-columns.scss */
       .blog article:last-child {
         margin-right: 0; } }
-  /* line 289, styles/main.scss */
+  /* line 292, styles/main.scss */
   .blog article .entry-title {
     font-family: 'brandon-grotesque', sans-serif;
     font-size: 1.6em;
     line-height: 1.5em;
     font-weight: 900; }
-  /* line 296, styles/main.scss */
+  /* line 299, styles/main.scss */
   .blog article p {
     margin: 0 2em 1.2em 1em;
     font-size: 1.2em; }
     @media screen and (max-width: 600px) {
-      /* line 296, styles/main.scss */
+      /* line 299, styles/main.scss */
       .blog article p {
         margin: 0 0 1.2em 0; } }
-  /* line 305, styles/main.scss */
+  /* line 308, styles/main.scss */
   .blog article .button {
     display: inline-block;
     margin-left: 1em;
@@ -553,26 +557,26 @@ header {
       color: #3a3a3a;
       border-color: #3a3a3a; }
     @media screen and (max-width: 600px) {
-      /* line 305, styles/main.scss */
+      /* line 308, styles/main.scss */
       .blog article .button {
         margin-left: 0; } }
 
 /******** FOOTER ********/
-/* line 321, styles/main.scss */
+/* line 324, styles/main.scss */
 footer {
   border-top: 1px solid #ffaa56; }
-  /* line 324, styles/main.scss */
+  /* line 327, styles/main.scss */
   footer p {
     padding: 1.5em 1em;
     text-align: right;
     text-transform: lowercase; }
     @media screen and (max-width: 768px) {
-      /* line 324, styles/main.scss */
+      /* line 327, styles/main.scss */
       footer p {
         text-align: center;
         padding: 1.5em 0; } }
 
-/* line 336, styles/main.scss */
+/* line 339, styles/main.scss */
 #mfPreviewBarShow {
   display: none !important; }
 

@@ -17,13 +17,10 @@ jQuery(document).ready(function() {
 	    }
 	    
 	});
-	
-
 		
 });
 
 	/*jshint devel:true */
-
 	console.log( 'main.js has loaded' );
 
 
