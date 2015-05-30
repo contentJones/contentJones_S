@@ -15,18 +15,36 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+		
+	<!-- ******** PORTFOLIO ******** -->
+	<section class="portfolio">
+		
+	<h2 class="subhead">recent work</h2>		
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // end of the loop. ?>
+		<!-- begin loop -->
+		<?php while ( have_posts() ) : the_post(); ?>
+		
+		<!-- item 1 -->
+		<div class="featured-item">
+			<div class="wrap">
+				<div class="featured-excerpt">
+					<h3><a href="<?php echo get_post_meta( get_the_ID(), 'work-link', true ); ?>"><?php echo get_the_title(); ?></a></h3>
+					<p><?php the_content(); ?></p>
+<!-- 					<a class="button" href="#">Visit the site</a> -->
+				</div>
+				<div class="featured-image">
+					<!-- make these lightbox images -->
+					<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+	the_post_thumbnail();
+} ?>
+				</div>
+			</div>
+		</div>
+				
+		<!-- end of loop -->
+		<?php endwhile; // end of the loop. ?>
+		
+	</section>		
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
