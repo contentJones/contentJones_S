@@ -12,9 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'contentjones_s' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'contentjones_s' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'contentjones_s' ), 'contentjones_s', '<a href="http://contentjones.com" rel="designer">Paul Davidson</a>' ); ?>
+		<p><a href="https://twitter.com/contentjones" target="_blank" title="Follow me on Twitter">twitter</a> | <a href="https://github.com/contentJones" target="_blank" title="See my repositories on Github">github</a> | <a href="http://www.linkedin.com/in/paulcdavidson/en" target="_blank" title="LinkedIn is nice too.">LinkedIn</a> | ©<?php echo date('Y'); ?> All rights reserved. Paul C. Davidson.</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

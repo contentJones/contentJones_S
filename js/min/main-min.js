@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){"use strict";jQuery(".toggle-nav").on("click",function(){jQuery("#site-wrapper").hasClass("show-nav")?(jQuery("#site-wrapper").removeClass("show-nav"),jQuery(".home #site-canvas").removeClass("screened")):(jQuery("#site-wrapper").addClass("show-nav"),jQuery(".home #site-canvas").addClass("screened"))})}),console.log("main.js has loaded");
