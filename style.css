@@ -466,7 +466,10 @@ header {
     .portfolio .featured-item .featured-image img {
       max-width: 100%;
       height: auto; }
-  /* line 249, styles/main.scss */
+    /* line 248, styles/main.scss */
+    .portfolio .featured-item .featured-image a {
+      border-bottom: none; }
+  /* line 253, styles/main.scss */
   .portfolio .featured-item .featured-excerpt {
     float: left;
     display: block;
@@ -477,7 +480,7 @@ header {
     .portfolio .featured-item .featured-excerpt:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
-      /* line 249, styles/main.scss */
+      /* line 253, styles/main.scss */
       .portfolio .featured-item .featured-excerpt {
         float: left;
         display: block;
@@ -487,15 +490,15 @@ header {
         /* line 89, styles/neat/grid/_span-columns.scss */
         .portfolio .featured-item .featured-excerpt:last-child {
           margin-right: 0; } }
-    /* line 258, styles/main.scss */
+    /* line 262, styles/main.scss */
     .portfolio .featured-item .featured-excerpt h3 a {
       font-family: 'brandon-grotesque', sans-serif;
       font-size: 1.6em;
       line-height: 1.5em; }
-      /* line 263, styles/main.scss */
+      /* line 267, styles/main.scss */
       .portfolio .featured-item .featured-excerpt h3 a:hover {
         border-bottom: 1px solid #3a3a3a; }
-    /* line 266, styles/main.scss */
+    /* line 270, styles/main.scss */
     .portfolio .featured-item .featured-excerpt p {
       font-size: 1.2em;
       margin-bottom: 1.2em; }
@@ -506,7 +509,7 @@ header {
   clear: both;
   content: "";
   display: table; }
-/* line 282, styles/main.scss */
+/* line 286, styles/main.scss */
 .blog article {
   float: left;
   display: block;
@@ -518,7 +521,7 @@ header {
   .blog article:last-child {
     margin-right: 0; }
   @media screen and (max-width: 600px) {
-    /* line 282, styles/main.scss */
+    /* line 286, styles/main.scss */
     .blog article {
       float: left;
       display: block;
@@ -528,21 +531,21 @@ header {
       /* line 89, styles/neat/grid/_span-columns.scss */
       .blog article:last-child {
         margin-right: 0; } }
-  /* line 292, styles/main.scss */
+  /* line 296, styles/main.scss */
   .blog article .entry-title {
     font-family: 'brandon-grotesque', sans-serif;
     font-size: 1.6em;
     line-height: 1.5em;
     font-weight: 900; }
-  /* line 299, styles/main.scss */
+  /* line 303, styles/main.scss */
   .blog article p {
     margin: 0 2em 1.2em 1em;
     font-size: 1.2em; }
     @media screen and (max-width: 600px) {
-      /* line 299, styles/main.scss */
+      /* line 303, styles/main.scss */
       .blog article p {
         margin: 0 0 1.2em 0; } }
-  /* line 308, styles/main.scss */
+  /* line 312, styles/main.scss */
   .blog article .button {
     display: inline-block;
     margin-left: 1em;
@@ -557,26 +560,26 @@ header {
       color: #3a3a3a;
       border-color: #3a3a3a; }
     @media screen and (max-width: 600px) {
-      /* line 308, styles/main.scss */
+      /* line 312, styles/main.scss */
       .blog article .button {
         margin-left: 0; } }
 
 /******** FOOTER ********/
-/* line 324, styles/main.scss */
+/* line 328, styles/main.scss */
 footer {
   border-top: 1px solid #ffaa56; }
-  /* line 327, styles/main.scss */
+  /* line 331, styles/main.scss */
   footer p {
     padding: 1.5em 1em;
     text-align: right;
     text-transform: lowercase; }
     @media screen and (max-width: 768px) {
-      /* line 327, styles/main.scss */
+      /* line 331, styles/main.scss */
       footer p {
         text-align: center;
         padding: 1.5em 0; } }
 
-/* line 339, styles/main.scss */
+/* line 343, styles/main.scss */
 #mfPreviewBarShow {
   display: none !important; }
 
