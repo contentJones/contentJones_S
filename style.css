@@ -322,27 +322,27 @@ body {
 
 /******** HEADER ********/
 /* line 130, styles/main.scss */
-header {
+header.site-header {
   margin: 0 0 40px;
   border-bottom: 1px solid #ffaa56; }
   /* line 20, styles/bourbon/addons/_clearfix.scss */
-  header::after {
+  header.site-header::after {
     clear: both;
     content: "";
     display: table; }
   /* line 135, styles/main.scss */
-  header .site-title {
+  header.site-header .site-title {
     float: left;
     padding: .5em 0 .5em 4.16667%;
     font-size: 2em;
     font-weight: 900;
     margin: 0; }
     /* line 142, styles/main.scss */
-    header .site-title a {
+    header.site-header .site-title a {
       border-bottom: none; }
     @media screen and (max-width: 768px) {
       /* line 135, styles/main.scss */
-      header .site-title {
+      header.site-header .site-title {
         padding: .5em 0;
         float: left;
         display: block;
@@ -350,20 +350,20 @@ header {
         width: 100%;
         text-align: center; }
         /* line 89, styles/neat/grid/_span-columns.scss */
-        header .site-title:last-child {
+        header.site-header .site-title:last-child {
           margin-right: 0; } }
   /* line 153, styles/main.scss */
-  header nav ul {
+  header.site-header nav ul {
     padding: 0 2em 0 0;
     float: right;
     margin-bottom: -1px; }
     @media screen and (max-width: 768px) {
       /* line 153, styles/main.scss */
-      header nav ul {
+      header.site-header nav ul {
         padding-right: 0; } }
     @media screen and (max-width: 768px) {
       /* line 153, styles/main.scss */
-      header nav ul {
+      header.site-header nav ul {
         float: left;
         display: block;
         margin-right: 0%;
@@ -372,35 +372,35 @@ header {
         display: block;
         margin: 0 auto; }
         /* line 89, styles/neat/grid/_span-columns.scss */
-        header nav ul:last-child {
+        header.site-header nav ul:last-child {
           margin-right: 0; }
         /* line 20, styles/bourbon/addons/_clearfix.scss */
-        header nav ul::after {
+        header.site-header nav ul::after {
           clear: both;
           content: "";
           display: table; } }
     /* line 170, styles/main.scss */
-    header nav ul li {
+    header.site-header nav ul li {
       float: left;
       display: inline-block;
       text-align: center; }
       @media screen and (max-width: 768px) {
         /* line 170, styles/main.scss */
-        header nav ul li {
+        header.site-header nav ul li {
           float: none; } }
       /* line 179, styles/main.scss */
-      header nav ul li a {
+      header.site-header nav ul li a {
         font-size: 1.5em;
         padding: 1em .5em;
         display: inline-block;
         border-bottom-color: transparent; }
         @media screen and (max-width: 768px) {
           /* line 179, styles/main.scss */
-          header nav ul li a {
+          header.site-header nav ul li a {
             padding: 1em .5em;
             font-size: 1.2em; } }
       /* line 191, styles/main.scss */
-      header nav ul li a:hover {
+      header.site-header nav ul li a:hover {
         color: #3a3a3a;
         border-bottom: 1px solid #3a3a3a; }
 
@@ -536,16 +536,26 @@ header {
     font-family: 'brandon-grotesque', sans-serif;
     font-size: 1.6em;
     line-height: 1.5em;
-    font-weight: 900; }
-  /* line 303, styles/main.scss */
+    font-weight: 900;
+    margin-bottom: .25em; }
+  /* line 305, styles/main.scss */
+  .blog article .entry-meta {
+    font-size: .8em; }
+    /* line 308, styles/main.scss */
+    .blog article .entry-meta p {
+      margin-left: 2px; }
+    /* line 310, styles/main.scss */
+    .blog article .entry-meta a {
+      border: none; }
+  /* line 315, styles/main.scss */
   .blog article p {
     margin: 0 2em 1.2em 1em;
     font-size: 1.2em; }
     @media screen and (max-width: 600px) {
-      /* line 303, styles/main.scss */
+      /* line 315, styles/main.scss */
       .blog article p {
         margin: 0 0 1.2em 0; } }
-  /* line 312, styles/main.scss */
+  /* line 324, styles/main.scss */
   .blog article .button {
     display: inline-block;
     margin-left: 1em;
@@ -560,26 +570,26 @@ header {
       color: #3a3a3a;
       border-color: #3a3a3a; }
     @media screen and (max-width: 600px) {
-      /* line 312, styles/main.scss */
+      /* line 324, styles/main.scss */
       .blog article .button {
         margin-left: 0; } }
 
 /******** FOOTER ********/
-/* line 328, styles/main.scss */
+/* line 340, styles/main.scss */
 footer {
   border-top: 1px solid #ffaa56; }
-  /* line 331, styles/main.scss */
+  /* line 343, styles/main.scss */
   footer p {
     padding: 1.5em 1em;
     text-align: right;
     text-transform: lowercase; }
     @media screen and (max-width: 768px) {
-      /* line 331, styles/main.scss */
+      /* line 343, styles/main.scss */
       footer p {
         text-align: center;
         padding: 1.5em 0; } }
 
-/* line 343, styles/main.scss */
+/* line 355, styles/main.scss */
 #mfPreviewBarShow {
   display: none !important; }
 

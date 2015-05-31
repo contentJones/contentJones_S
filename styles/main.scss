@@ -127,7 +127,7 @@
 
 /******** HEADER ********/ 
 
-	header {
+	header.site-header {
 		@include clearfix;
 		margin: 0 0 40px;
 		border-bottom: 1px solid $gold;
@@ -298,6 +298,18 @@
 			font-size: 1.6em; 
 			line-height: 1.5em; 
 			font-weight: 900;
+			margin-bottom: .25em;
+			
+		}
+		
+		.entry-meta {
+			font-size: .8em;
+			
+			p { margin-left: 2px;}
+			
+			a {
+				border: none;
+			}
 		}
 		
 		p { 

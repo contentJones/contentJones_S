@@ -37,7 +37,6 @@ get_header(); ?>
 			while ( $blog_query->have_posts() ) : $blog_query->the_post(); ?>
 
 		
-		<!-- item 1 -->
 		<div class="featured-item">
 			<div class="wrap">
 				<div class="featured-excerpt">
@@ -59,10 +58,43 @@ get_header(); ?>
 				
 		<!-- end of loop -->
 		<?php endwhile; 
-			  endif;
-			  wp_reset_postdata(); ?>
+			  endif; ?>
 		
 	</section>		
+
+	<!-- ******** BLOG ******** -->
+	<section class="blog">
+		
+		<h2 class="subhead">recent posts</h2>
+	
+		<?php
+			
+			// The Query
+			wp_reset_query();
+			$query = new WP_Query( array( 'category_name' => 'blog') );
+			if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+		
+			<article>
+					<header class="entry-header">
+						<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+						<div class="entry-meta">
+							<p><?php contentjones_s_posted_on(); ?></p>
+						</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+					
+					<?php the_excerpt(); ?>
+					
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="button">Read on...</a>
+			</article>
+
+		<!-- end The Query -->
+		<?php endwhile; 
+			  endif; ?>
+			
+	</section>
+
+
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
