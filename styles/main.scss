@@ -139,7 +139,8 @@
 			font-weight: 900;
 			margin: 0;
 			
-			a { border-bottom: none; }
+			a { 
+				border-bottom: none; }
 			
 			@include media($tablet) { 
 				padding: .5em 0;  
@@ -178,13 +179,19 @@
 					
 					a { 
 						font-size: 1.5em; 
-						padding: 1em .5em; 
+						padding: 1.1em .5em; 
 						display: inline-block; 
 						border-bottom-color: transparent;
+						color: $gray_medium;
+						text-transform: uppercase;
+						font-size: 1.2em;
+						font-weight: 900;
+						letter-spacing: 2px;
 						
 						@include media($tablet) { 
-							padding: 1em .5em;
+							padding: 1em .3em;
 							font-size: 1.2em;
+							letter-spacing: 0;
 						}
 					}
 					
@@ -206,11 +213,11 @@
 			@include shift(.5);
 			position: relative;
 			color: $gray_medium;
-			font-size: 1.5em;
+			font-size: 1.2em;
 			@include font-bold;
-			font-weight: 500;
+			font-weight: 900;
 			text-transform: uppercase;
-			letter-spacing: 1px;
+			letter-spacing: 2px;
 			
 			@include media($tablet) {
 				@include shift(0);
@@ -263,6 +270,7 @@
 					@include font-regular; 
 					font-size: 1.6em; 
 					line-height: 1.5em; 
+					text-transform: capitalize;
 					
 					&:hover {border-bottom: 1px solid $gray_dark; }
 				}
@@ -303,12 +311,17 @@
 		}
 		
 		.entry-meta {
-			font-size: .8em;
 			
-			p { margin-left: 2px;}
+			p { 
+				font-size: .9em;
+				margin-left: 2px;
+				color: $gray_medium;
+				text-transform: lowercase;
+				}
 			
 			a {
 				border: none;
+				color: $gray_medium;
 			}
 		}
 		
