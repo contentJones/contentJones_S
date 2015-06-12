@@ -1,6 +1,6 @@
 /******** TABLE OF CONTENTS *******
 	
-	stylesheet for content-jones.com by Paul Davidson. 2015.
+	stylesheet for contentjones.com by Paul Davidson. 2015.
 	
 	- Global Styles
 	- Off Canvas Widget Area
@@ -241,6 +241,7 @@
 			.featured-image {
 				@include span-columns(6.5);
 				@include shift(1);
+				text-align: center;
 	
 				@include media($tablet) { 
 					@include span-columns(6);
@@ -250,6 +251,18 @@
 				img {
 					max-width: 100%;
 					height: auto;
+					max-width: 75%;
+					float: right;
+					
+					@include media($tablet) { 
+						float: none;
+						margin-top: 30px;
+						}
+					
+					@include media($mobile) { 
+						max-width: 100%;
+						}
+					
 				}
 				
 				a {
